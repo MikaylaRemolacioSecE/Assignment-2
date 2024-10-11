@@ -1,0 +1,164 @@
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color: rgb(7, 7, 9);
+    overflow-x: hidden;
+}
+  
+header{
+    display: flex;
+    background-color: rgba(47, 77, 165, 0.168);
+}
+
+h1{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    text-align: center;
+    margin-right: 0.8em;
+    color: rgb(90, 126, 235);
+}
+
+header img{
+    justify-self: left;
+    width: auto;
+    height: 7em;
+    padding: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+    border-radius: 20%;
+}
+
+h2{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(177, 211, 240);
+}
+
+h3{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(141, 151, 243);
+}
+
+h4{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8em;
+    text-align: center;
+    color: rgb(214, 215, 255);
+}
+
+nav{
+    margin-inline: 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #8163b8a2;
+    border-radius: 5px;
+}
+
+.mp,.ad,.md{
+    display: flex;
+}
+
+.mp,.ad,.md div{
+    margin: 1vw;
+}
+
+p{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.imgs_animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    overflow: hidden;
+    background-color: rgba(18, 18, 58, 0.404);
+}
+
+.slide {
+    animation: slides 20s ease-in-out infinite;
+    opacity: 0;
+    position: absolute;
+}
+
+.slide > img {
+    width: 50vw;
+    height: auto;
+    border-radius: 5%;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes slides { 
+    0%, 100% { 
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    20%, 30% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    70%, 80% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+img{
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
